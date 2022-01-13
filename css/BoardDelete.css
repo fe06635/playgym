@@ -1,0 +1,46 @@
+#contents {
+    position: relative;
+    width: 1180px;
+    text-align: center;
+}
+.boardDelete {
+    margin: 0 auto;
+    width: 960px;
+    min-height: 400px;
+}
+.boardDelete>form {
+    margin: 0 auto;
+    margin-top: 150px;
+    width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#board_deleteFrm>p {
+    background-color: rgb(252, 146, 107);
+    padding: 10px 0;
+    color: white;
+    font-weight: bold;
+}
+#board_deleteFrm>input {
+    padding: 5px 5px;
+    width: 180px;
+    margin-top: 10px;
+}
+.buttonContainer{
+    margin: 0 auto;
+    width: 180px;
+
+}
+.buttonContainer>button {
+    width: 80px;
+    padding: 5px 5px;
+    margin: 10px 3px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn_delete {
+    background-color: white;
+    border: 2px solid coral;
+    color: coral;
+}

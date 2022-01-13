@@ -1,0 +1,123 @@
+header>hr {
+    margin-top: 5px;
+    border: none;
+    height: 0;
+    border-top: 1px solid #ccc;
+}
+
+/*contents 영역*/
+#contents {
+    position: relative;
+    width: 1180px;
+    text-align: center;
+}
+form {
+    width: 500px;
+    padding: 10px 30px;
+    margin: 0 auto;
+}
+form>img {
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+    padding: 10px 0;
+}
+form>h2 {
+    margin-top: 10px;
+    padding: 10px 20px;
+    text-align: center;
+}
+form div {
+    padding: 10px;
+    text-align: left;
+}
+form p {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 0;
+    margin-bottom: 15px;
+    overflow: hidden;
+    position: relative;
+}
+.registerInfo {
+    margin-bottom: 20px;
+}
+.registerInfo label {
+    width: 35%;
+    padding: 10px 0 10px 25px;
+    font-weight: bold;
+}
+.registerInfo input {
+    position:absolute;
+    top: 8px;
+    right: 5px;
+    border: none;
+    padding: 5px 10px;
+    outline: none;
+    font-size: 16px;
+}
+form h4 {
+    padding-left: 15px;
+    margin-bottom: 15px;
+}
+
+.registerCheck p {
+    padding: 10px 15px;
+}
+.registerCheck label {
+    font-size: 16px;
+    font-weight: bold;
+}
+.registerCheck input {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 15px;
+    vertical-align: middle;
+    margin-bottom: 3px;
+    cursor: pointer;
+}
+.registerCheck p button {
+    float: right;
+    padding: 3px;
+    background: none;
+    border: none;
+    color: cornflowerblue;
+    cursor: pointer;
+}
+.registerCheck>div {
+    text-align: center;
+}
+.registerCheck>div button {
+    margin-top: 20px;
+    margin-left: 10px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+}
+#registerComplete {
+    margin-right: 20px;
+    width: 55%;
+    background-color: #FF7F00;
+    border: 1px solid #FF7F00;
+    text-align: center;
+    font-size: 1.16em;
+}
+#registerComplete a {
+    padding: 15px 0;
+    display: inline-block;
+    width: 100%;
+    color: #fff;
+}
+#cancel {
+    width: 30%;
+    background-color: #ccc;
+    border: 1px solid #ccc;
+    font-size: 1.16em;
+}
+#cancel a {
+    padding: 15px 0;
+    display: inline-block;
+    width: 100%;
+    color: #fff;
+}

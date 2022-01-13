@@ -1,0 +1,73 @@
+#contents {
+    position: relative;
+    width: 1180px;
+    text-align: center;
+}
+.introduce {
+    margin: 0 auto;
+    width: 960px;
+    min-height: 500px;
+}
+.introduce>h2 {
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: coral;
+    border-bottom: 1px solid black;
+}
+.room {
+    position: relative;
+    overflow: hidden;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.image_container {
+    width: 300px;
+    height: 210px;
+    border-radius: 5px;
+}
+.image_container>img {
+    width: 300px;
+    height: 210px;
+    border-radius: 5px;
+}
+.room_info>h3 {
+    color: cadetblue;
+    font-weight:1000;
+    margin-bottom: 10px;
+}
+.room_info>p {
+    font-size: 1.05em;
+    line-height: 30px;
+}
+.room:nth-child(even) .room_info {
+    box-sizing: border-box;
+    float: left;
+    width: 600px;
+    height: 210px;
+    padding: 10px;
+    text-align: left;
+}
+/*.room:nth-child(even) .room_info::after {
+    clear: both;
+    content: "";
+}*/
+.room:nth-child(even) .image_container {
+    float: right;
+}
+
+
+.room:nth-child(odd) .room_info {
+    box-sizing: border-box;
+    float: right;
+    width: 600px;
+    height: 210px;
+    padding: 10px;
+    text-align: left;
+}
+
+.room:nth-child(odd) .image_container {
+    float: left;
+}
+

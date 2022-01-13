@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/product.css">
+    <link rel="stylesheet" href="./css/jquery-ui.min.css">
+    <script src="./javascript/jquery-3.6.0.min.js"></script>
+    <script src="./javascript/jquery-ui.min.js"></script>
+    <script src="./javascript/index.js"></script>
+    <script src="./javascript/product.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <!--header-->
+        <header>
+            <div id="headerTop">
+                <h2 id="logo">
+                    <a href="index.html"><img src="./image/nameLogoMini.png" alt="homepage" title="logo"></a>
+                </h2>
+                <label for="search"></label>
+                <input type="text" id="search" name="search" placeholder="종목명을 입력해주세요">
+                <ul class="mainOption">
+                    <li><a href="#">내 정보</a></li>
+                    <li><a href="login.html">로그인</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+            </div>
+            <nav>
+                <h2 class="hidden">네비게이션바</h2>
+                <ul class="mainMenu">
+                    <li><a href="list.html">시설대여</a><!--전체 시설보기로 들어가기-->
+                        <ul class="subMenu">
+                            <li><a href="list.html">테니스코트</a></li>
+                            <li><a href="list.html">농구코트</a></li>
+                            <li><a href="list.html">배드민턴코트</a></li>
+                            <li><a href="list.html">탁구코트</a></li>
+                            <li><a href="list.html">족구코트</a></li>
+                            <li><a href="list.html">배구코트</a></li>
+                        </ul>
+                    </li
+                    ><li><a href="./lecture/LecList.html">강의수강</a><!--공백제거를 위해 li 닫기를 다음 li 앞에 줌-->
+                        <ul class="subMenu">
+                            <li><a href="./lecture/LecList.html">강의신청</a></li>
+                            <li><a href="./lecture/LecInfo.html">강사소개</a></li>
+                            <li><a href="./lecture/LecReview.html">수강후기</a></li>
+                        </ul>
+                    </li
+                    ><li><a href="./info/gymInfo.html">소개</a>
+                        <ul class="subMenu">
+                            <li><a href="./info/gymInfo.html">체육관소개</a></li>
+                            <li><a href="./info/roomInfo.html">시설정보</a></li>
+                        </ul>
+                    </li
+                    ><li><a href="./board/BoardList.html">커뮤니티</a>
+                        <ul class="subMenu">
+                            <li><a href="./board/noticeList.html">공지사항</a></li>
+                            <li><a href="./board/BoardList.html">게시판</a></li>
+                            <li><a href="#">고객센터</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!--contents-->
+        <div id="contents">
+            <div class="product">
+                <div class="productInner">
+                    <div class="canvas">
+                        <div class="productSlider">
+                            <img class="sliderImage" src="./image/0D1.jpg" alt="productImage" title="productImage">
+                            <img class="sliderImage" src="./image/0D3.jpg" alt="productImage" title="productImage">
+                            <img class="sliderImage" src="./image/shoes-ga7e3177e0_1920.jpg" alt="productImage" title="productImage">
+                        </div>
+                        <div class="control_button">
+                            <img src="./image/arrow_next.png" class="swipe_right">
+                            <img src="./image/arrow_prev.png" class="swipe_left">
+                        </div>
+                    </div>
+                    <div class="productInfo">
+                        <h3>D구역 1번 테니스장</h3>&nbsp;&nbsp;&nbsp;<span class="ApopupDeadline popup">마감임박</span> <span class="ApopupEvent popup">이벤트</span>
+                        <p>서울시 강남구 플레이짐 D구역 1번</p>
+                        <p>최대 6명 입장가능</p>
+                        <p class="selectCalendar"><input type="image" id="datepicker" src="./image/calendar.png">날짜 선택<br>
+                        <span>선택일자 : <span class="selectDate"></span></span>
+                        </p>
+                        <p class="prentListpay"><span class="discountPay">30,000 </span><span class="rentListpay mainPay">50,000</span>원</p>
+                        <div class="button">
+                            <button class="reservation"><a href="#">바로예약</a></button>
+                            <!--<button class="reservationEnd"><a href="#">접수종료</a></button>-->
+                            <button class="check"><img src="./image/callicon3.png"></button>
+                        </div>
+                    </div>
+                    <!--<div class="calendarLayer">
+                        <div class="calendar">
+                            <h2>1월</h2>
+                            <p>2022</p>
+                            <p class="calendarMessage">날짜를 선택해주세요</p>
+                            <p class="calendarClose"><span>X</span></p>
+                            <div class="innerCalendar">
+                                <p>미완성</p>
+                            </div>
+                        </div>
+                    </div>-->
+                </div>
+                <div class="information">
+                    <h2>상세설명</h2>
+                    <hr>
+                    <div class="cautionPopup">
+                        <p class="pp">바이러스 확산 방지를 위한 <span>사회적 거리두기</span>에 꼭 참여해주세요<br>
+                        <span>방역수칙 미 숙지로 인한 불이익 발생 시, 책임은 본인에게 있습니다.</span></p>
+                        <p>1. 마스크 착용 및 손소독제를 사용해 주세요.</p>
+                        <p>2. 자리에 앉을 경우 조금 떨어져서 앉아주세요.</p>
+                        <p>3. 시설에서 음식물 섭취를 자제해주세요.(※음료, 커피 등은 허용)</p>
+                    </div>
+                    <div class="cautionInfo">
+                        <h3>주의사항</h3>
+                        <p> 모든 서비스의 이용은 담당 기관의 규정에 따릅니다. 각 시설의 규정 및 허가조건을 반드시 준수하여야 합니다.<br>
+                            기관의 시설물과 부대시설을 이용함에 있어 담당자들과 협의 후 사용합니다.<br>
+                            시설이용료를 납부한 고객들이 사용할 수 있는 영리 기관입니다.<br>
+                            접수 시간을 기준으로 브라우저에서 새로고침을 하면 변경된 정보를 볼 수 있습니다.<br>
+                            대관 중 시설 훼손이 발생한 경우 손해액을 호스트에게 배상해야합니다.<br>
+                            사용자 인원수가 초과될 경우, 입장이 불가합니다.<br>
+                            대여 시간 보다 적게 사용 하였더라도 환불되지 않습니다.<br>
+                            이용시간은 오전, 오후로 나누어져 있으며 시간을 초과할 경우 다음 시설 이용에 불이익이 있을 수 있습니다.<br>
+                        </p>
+                    </div>
+                    <div class="refundInfo">
+                        <h3>환불사항</h3>
+                        <p>
+                            천재지변, 불가항력에 의하여 대여 사용이 불가능한 경우 <span>&lt;- 전액 반환 -&gt;</span><br>
+                            '시설'의 귀책사유로 인해 대여가 불가능한 경우 <span>&lt;- 전액 반환 -&gt;</span><br>
+                            5일전 대여 취소 <span>&lt;- 전액 반환 -&gt;</span><br>
+                            3일전 대여 취소 <span>&lt;- 70% 반환 -&gt;</span><br>
+                            1일전 대여 취소 <span>&lt;- 50% 반환 -&gt;</span><br>
+                            0일전 대여 취소 <span>&lt;- 0% 반환 -&gt;</span><br>
+                        </p>
+                    </div>
+                    <div class="otherCanvas">
+                        <h2>다른 시설도 있어요</h2>
+                        <div class="otherSlide">
+                            <div class="otherProduct">
+                                <a href="#">
+                                    <img src="./image/0D3.jpg">
+                                    <div class="otherContent">
+                                        <h4>D구역 테니스장</h4>
+                                    </div>
+                                </a>    
+                            </div>
+                            <div class="otherProduct">
+                                <a href="#">
+                                    <img src="./image/0B1.jpg">
+                                    <div class="otherContent">
+                                        <h4>B구역 배드민턴장</h4>
+                                    </div>
+                                </a>    
+                            </div>
+                            <div class="otherProduct">
+                                <a href="#">
+                                    <img src="./image/0A1.jpg">
+                                    <div class="otherContent">
+                                        <h4>A구역 농구장</h4>
+                                    </div>
+                                </a>    
+                            </div>
+                            <div class="otherProduct">
+                                <a href="#">
+                                    <img src="./image/0A2.jpg">
+                                    <div class="otherContent">
+                                        <h4>A구역 농구장</h4>
+                                    </div>
+                                </a>    
+                            </div>
+                            <div class="otherProduct">
+                                <a href="#">
+                                    <img src="./image/0D4.html">
+                                    <div class="otherContent">
+                                        <h4>D구역 테니스장</h4>
+                                    </div>
+                                </a>    
+                            </div>
+                            <div class="otherProduct">
+                                <a href="#">
+                                    <img src="./image/0G1.jpg">
+                                    <div class="otherContent">
+                                        <h4>G구역 탁구장</h4>
+                                    </div>
+                                </a>    
+                            </div>
+                            <div class="otherProduct">
+                                <a href="#">
+                                    <img src="./image/0D1.jpg">
+                                    <div class="otherContent">
+                                        <h4>D구역 테니스장</h4>
+                                    </div>
+                                </a>    
+                            </div>
+                            <div class="otherProduct">
+                                <a href="#">
+                                    <img src="./image/0G2.jpg">
+                                    <div class="otherContent">
+                                        <h4>G구역 탁구장</h4>
+                                    </div>
+                                </a>    
+                            </div>
+                            <div class="otherProduct">
+                                <a href="#">
+                                    <img src="./image/0G1.jpg">
+                                    <div class="otherContent">
+                                        <h4>G구역 탁구장</h4>
+                                    </div>
+                                </a>    
+                            </div>
+                        </div>
+                        <div class="otherControl">
+                            <img src="./image/arrow_next.png" class="other_right">
+                            <img src="./image/arrow_prev.png" class="other_left">
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <h3>댓글확인</h3>
+                        <div class="comment_count">
+                            <span class="count_number">3</span>개의 댓글이 작성되어있습니다.
+                        </div>
+                        <div class="comment_row">
+                            <div class="inner_comment_row">
+                                <div class="comment_name_date"><span>김복순</span>
+                                    <time datetime="2021-10-11">2021-11-22</time>
+                                </div>
+                            </div>
+                            <div class="comment_content">공간이 널찍하고 깨끗해서 치기 좋았습니다
+                                가끔씩 예약해서 즐겁게 놀다가고 싶네요 아주 만족합니다.
+                                <a href="#">신고하기</a>
+                            </div>
+                        </div>
+                        <div class="comment_row">
+                            <div class="inner_comment_row">
+                                <div class="comment_name_date"><span>홍길동</span>
+                                    <time datetime="2021-10-11">2021-10-11</time>
+                                </div>
+                            </div>
+                            <div class="comment_content">동네 체육관은 자리가 다 차서 한번 신청해봤는데 
+                                생각보다 아주 맘에 들었어요 <br>
+                                같이 온 일행들도 다 같이 좋다고 했네요. <br>
+                                다음번에도 대여 신청할게요~
+                                <a href="#">신고하기</a>
+                            </div>
+                        </div>
+                        <div class="comment_row">
+                            <div class="inner_comment_row">
+                                <div class="comment_name_date"><span>Jirisan</span>
+                                    <time datetime="2021-10-11">2021-09-01</time>
+                                </div>
+                            </div>
+                            <div class="comment_content">♡♡♡♡♡♡다음에도 또 오겠습니다!!!♡♡♡♡♡♡
+                                <a href="#">신고하기</a>
+                            </div>
+                        </div>
+                        <div class="comment_write">
+                            <h3>댓글작성</h3>
+                            <textarea class="write_comment" name="write_comment" rows="4" placeholder="댓글을 작성해주세요"></textarea>
+                            <button type="submit">작성</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--slogan-->
+        <div id="slogan">
+            <section>
+                <p><a href="#">개인정보 처리방침</a></p>
+                <p><a href="#">이용약관</a></p>
+                <p><a href="#">사이트맵</a></p>
+            </section>
+        </div>
+        <!--footer-->
+        <footer>
+            <div class="footerInner">
+                <img src="./image/nameLogoMini.png">
+                <div class="address">
+                    <span>대표자: 박춘배</span>
+                    <span>서울시 강남구 남부순환로 9999 두더지빌딩 1층</span>
+                    <span>고객문의 031-XXXX-XXXX</spans><br>
+                    <span>&copy;copyright 2021-11 by EZen</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

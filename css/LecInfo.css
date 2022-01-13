@@ -1,0 +1,91 @@
+#contents {
+    position: relative;
+    width: 1180px;
+    text-align: center;
+}
+.lecInfo {
+    margin: 0 auto;
+    width: 960px;
+    min-height: 500px;
+}
+.lecInfo>h2 {
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: coral;
+}
+.lecInfoTab>ul {
+    display: flex;
+    border-bottom: 1px solid rgb(128, 128, 128);
+}
+.lecInfoTab>ul>li {
+    border: 1px solid rgb(192, 192, 192);
+    border-bottom: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: rgb(240, 240, 240);
+    cursor: pointer;
+}
+.lecInfoTab>ul>li:hover {
+    background: rgb(255, 136, 93) !important;
+    border: 1px solid black !important;
+    border-bottom: none !important;
+    transition: 0.2s;
+}
+.lecInfoTab>ul>li>a:hover {
+    color: black !important;
+}
+.lecInfoTab>ul>li>a {
+    display: block;
+    width: 100px;
+    padding: 7px 10px;
+    font-weight: bold;
+    color: darkgrey;
+}
+.tab_content {
+    display: none;
+    overflow: hidden;
+    margin-top: 10px;
+}
+.tabOn {
+    display: block;
+}
+.select_sports {
+    background: rgb(255, 136, 93) !important;
+    border: 1px solid black !important;
+    border-bottom: none !important;
+}
+.select_sports_font {
+    color: black !important;
+}
+.article_lesson img {
+    width: 200px;
+    height: 240px;
+}
+.article_lesson {
+    position: relative;
+    text-align: center;
+    padding: 10px 17px;
+    display: block;
+    float: left;
+}
+.lesson_profile {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 150px;
+    transform: translate(-50%,0);
+    font-family: 'NanumBold';
+}
+.lesson_profile span {
+    color: coral;
+    font-weight: bold;
+}
+.lesson_name {
+    position: absolute;
+    left: 50%;
+    width: 80px;
+    bottom: 8%;
+    transform: translate(-50%,0);
+}

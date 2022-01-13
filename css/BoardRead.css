@@ -1,0 +1,77 @@
+#contents {
+    position: relative;
+    width: 1180px;
+    text-align: center;
+}
+.boardRead {
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 960px;
+    min-height: 600px;
+}
+.boardRead>h2 {
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: coral;
+    border-bottom: 2px solid coral;
+}
+.boardRead_title {
+    background-color: blanchedalmond;
+    padding: 8px 3px 8px 10px;
+    border-bottom: 1px solid #ccc;
+}
+.boardRead_header h2 {
+    text-align: left;
+}
+.boardMember_info {
+    display:flex;
+    padding: 5px 3px 5px 10px;
+    border-bottom: 1px solid #ccc;
+}
+.boardMember_name {
+    text-align: left;
+}
+.boardMember_date {
+    margin-left: auto;
+}
+.boardMember_date>span {
+    margin-left: 10px;
+}
+.boardMember_date>span:last-child::before {
+    content: "|";
+    margin-right: 10px;
+    color: rgb(158, 158, 158);
+}
+.boardRead_read {   
+    text-align: left;
+    min-height: 300px;
+    padding: 5px 3px 5px 10px;
+    margin-top: 10px;
+}
+.boardRead_button {
+    display: flex;
+    margin-top: 10px;
+}
+.boardRead_button button {
+    padding: 3px 15px;
+}
+.btn_list {
+    background-color: white;
+    border: 1px solid coral;
+    color: coral;
+    cursor: pointer;
+}
+.btn_update {
+    margin-left: auto;
+    background-color: #fff;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.btn_delete {
+    margin-left: 10px;
+    background-color: #fff;
+    border: 1px solid black;
+    cursor: pointer;
+}

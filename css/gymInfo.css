@@ -1,0 +1,67 @@
+#contents {
+    position: relative;
+    width: 1180px;
+    text-align: center;
+}
+.introduce {
+    margin: 0 auto;
+    width: 960px;
+    min-height: 500px;
+}
+.introduce>h2 {
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: coral;
+    border-bottom: 1px solid black;
+}
+.gym_info>div {
+    text-align: left;
+    margin-top: 40px;
+}
+.gym_info>div>h4 {
+    padding: 10px 0;
+}
+.performance>p {
+    padding: 10px 0;
+}
+.main_image>img {
+    display: block;
+    margin: 0 auto;
+    width: 380px;
+    height: 260px;
+}
+.image_container {
+    display: flex;
+    width: 380px;
+    height: 50px;
+    margin-left: 290px;
+    margin-top: 5px;
+    overflow: hidden;
+}
+.image_container>img {
+    width: 70px;
+    height: 50px;
+    margin-right: 10px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+.image_container>img:hover {
+    opacity: 1 !important;
+    transition: 0.2s;
+}
+.history>table {
+    border: 1px solid rgb(165, 165, 165);
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+}
+td,th {
+    border: 1px solid rgb(165, 165, 165);
+    padding: 5px 0px;
+    text-align: center;
+}
+th {
+    background-color: blanchedalmond;
+}

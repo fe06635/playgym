@@ -1,0 +1,95 @@
+header>hr {
+    margin-top: 5px;
+    border: none;
+    height: 0;
+    border-top: 1px solid #ccc;
+}
+
+/*contents 영역*/
+#contents {
+    position: relative;
+    width: 1180px;
+    text-align: center;
+}
+form {
+    width: 500px;
+    padding: 60px 70px 170px 70px;
+    margin: 100px auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+form>img {
+    width: 200px;
+    height: 50px;
+    padding: 20px 0;
+}
+form>h2 {
+    padding: 10px 20px;
+    text-align: center;
+}
+form div {
+    text-align: left;
+}
+form p {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 0;
+    margin-bottom: 15px;
+    margin-top: 30px;
+    overflow: hidden;
+    position: relative;
+}
+.loginInfo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/*.loginInfo label {
+    padding: 10px 0 10px 25px;
+    font-weight: bold;
+}*/
+.loginInfo input {
+    position:relative;
+    /*top: 8px;
+    right: 5px;*/
+    border: none;
+    padding: 5px 0px 5px 20px;
+    outline: none;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+}
+.findRegister {
+    text-align: right;
+}
+.findRegister>a {
+    padding: 0 10px;
+}
+.findRegister>a:nth-child(2)::before {
+    margin-right: 20px;
+    content: "|";
+    opacity: 0.5;
+    font-size: 1.4em;
+}
+#loginComplete {
+    margin-top: 20px;
+    width: 100%;
+    height: 60px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    float:right;
+    background: #FF7F00;
+    border: 1px solid #FF7F00;
+}
+#loginComplete a {
+    line-height: 60px;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+}
+.footerInner div {
+    text-align: center;
+}
+.footerInner div>span {
+    text-align: center;
+}

@@ -1,0 +1,115 @@
+#contents {
+    position: relative;
+    width: 1180px;
+    text-align: center;
+}
+.innerList>h2 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    text-align: left;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+.innerList>h2 span {
+    color: coral;
+}
+.productList {
+    overflow: hidden;
+    text-align:left;
+}
+.product {
+    padding: 12px;
+    display: inline-block;
+    width: 360px;
+}
+.product>a {
+    display: block;
+    width: 360px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.product>a:hover img {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.image_container {
+    overflow: hidden;
+}
+.image_container>img {
+    width: 360px;
+    height: 240px;
+}
+.product_container{
+    text-align: left;
+    padding: 10px 12px 15px;
+}
+.product_container h3 {
+    margin-bottom: 5px;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.time {
+    position: relative;
+}
+.popup_container {
+    position: absolute;
+    right: 0;
+}
+.productPay {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: coral;
+}
+.product_container p:last-child {
+    margin-top: 5px;
+    position: relative;
+}
+.productCall {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.productCall em {
+    font-size: 0.8em;
+    font-style: unset;
+}
+.productCall>img {
+    position: relative;
+    top: 3px;
+    margin-right: 3px;
+    height: 14px;
+    width: 14px;
+}
+.ApopupPopular,.ApopupDeadline,.ApopupEvent{
+    display: inline-block;
+    border-radius: 10px;
+    color: white;
+    padding: 4px 5px;
+    font-size: 0.8em;
+}
+.ApopupDeadline {
+    background:orchid;
+    border: 1px solid orchid;
+}
+.ApopupPopular {
+    background:dodgerblue;
+    border: 1px solid dodgerblue;
+}
+.ApopupEvent {
+    background:indianred;
+    border: 1px solid indianred;
+}
+.ApopupHidden {
+    display: none;
+}
+.discountPay {
+    display: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: rgb(185, 53, 53);
+}
+.hidePay {
+    font-size: 0.7em;
+    color: #ccc;
+    text-decoration: line-through;
+}

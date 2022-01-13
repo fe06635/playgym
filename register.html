@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/register.css">
+    <script src="./javascript/jquery-3.6.0.min.js"></script>
+    <script src="./javascript/register.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <!--header-->
+        <header>
+            <div id="headerTop">
+                <h2 id="logo">
+                    <a href="index.html"><img src="./image/nameLogoMini.png"></a>
+                </h2>
+                <label for="search"></label>
+                <input type="text" id="search" name="search" placeholder="종목명을 입력해주세요">
+                <ul class="mainOption">
+                    <li><a href="#">내 정보</a></li>
+                    <li><a href="login.html">로그인</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+            </div>
+            <hr>
+        </header>
+        <!--contents-->
+        <div id="contents">
+            <form action="registerProc.jsp" method="post" id="register" name="register">
+                <img src="image/nameLogoMini.png">
+                <h2>회원정보를 입력해주세요</h2>
+                <div class="registerInfo">
+                    <p>
+                        <label for="userid">사용자명</label>
+                        <input type="text" id="userid" name="userid" size="35" dir="rtl" required placeholder="홈페이지내에서 표시되는 이름입니다.">
+                    </p>
+                    <p>
+                        <label for="id">아이디</label>
+                        <input type="email" id="id" name="id" size="35" dir="rtl" required placeholder="이메일">
+                    </p>
+                    <p>
+                        <label for="pwd">비밀번호</label>
+                        <input type="password" id="pwd" name="pwd" size="35" dir="rtl" required placeholder="영문/숫자를 합쳐서 8글자 이상">
+                    </p>
+                    <p>
+                        <label for="verify">비밀번호확인</label>
+                        <input type="password" id="verify" name="verify" dir="rtl" size="35" required>
+                    </p>
+                    <p>
+                        <label for="tel">휴대폰 번호</label>
+                        <input type="tel" id="tel" name="tel" dir="rtl" size="35" required>
+                    </p>
+                </div>
+                <div class="registerCheck">
+                    <h4>서비스 약관에 동의해주세요</h4>
+                    <p>
+                        <input type="checkbox" id="allCheck" name="allCheck">
+                        <label for="allCheck">모두 동의</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="age" name="age" class="chk_register">
+                        <label for="age">(필수)본인은 만 14세 이상입니다.</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="term" name="term" class="chk_register">
+                        <label for="term">(필수)이용약관</label>
+                        <button class="termView">약관확인</button>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="privacy" name="privacy" class="chk_register">
+                        <label for="privacy">(필수)개인정보처리방침</label>
+                        <button class="privacyView">약관확인</button>
+                    </p>
+                    <div>
+                        <button id="registerComplete" name="registerComplete">가입하기</button>
+                        <button id="cancel"><a href="index.html">취소</a></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!--slogan-->
+        <div id="slogan">
+            <section>
+                <p><a href="#">개인정보 처리방침</a></p>
+                <p><a href="#">이용약관</a></p>
+                <p><a href="#">사이트맵</a></p>
+            </section>
+        </div>
+        <!--footer-->
+        <footer>
+            <div class="footerInner">
+                <img src="./image/nameLogoMini.png">
+                <div class="address">
+                    <span>대표자: 박춘배</span>
+                    <span>서울시 강남구 남부순환로 9999 두더지빌딩 1층</span>
+                    <span>고객문의 031-XXXX-XXXX</spans><br>
+                    <span>&copy;copyright 2021-11 by EZen</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

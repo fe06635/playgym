@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/list.css">
+    <script src="./javascript/jquery-3.6.0.min.js"></script>
+    <script src="./javascript/index.js"></script>
+    <script src="./javascript/list.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <!--header-->
+        <header>
+            <div id="headerTop">
+                <h2 id="logo">
+                    <a href="index.html"><img src="./image/nameLogoMini.png"></a>
+                </h2>
+                <label for="search"></label>
+                <input type="text" id="search" name="search" placeholder="종목명을 입력해주세요">
+                <ul class="mainOption">
+                    <li><a href="#">내 정보</a></li>
+                    <li><a href="login.html">로그인</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+            </div>
+            <nav>
+                <h2 class="hidden">네비게이션바</h2>
+                <ul class="mainMenu">
+                    <li><a href="list.html">시설대여</a><!--전체 시설보기로 들어가기-->
+                        <ul class="subMenu">
+                            <li><a href="list.html">테니스코트</a></li>
+                            <li><a href="list.html">농구코트</a></li>
+                            <li><a href="list.html">배드민턴코트</a></li>
+                            <li><a href="list.html">탁구코트</a></li>
+                            <li><a href="list.html">족구코트</a></li>
+                            <li><a href="list.html">배구코트</a></li>
+                        </ul>
+                    </li
+                    ><li><a href="./lecture/LecList.html">강의수강</a><!--공백제거를 위해 li 닫기를 다음 li 앞에 줌-->
+                        <ul class="subMenu">
+                            <li><a href="./lecture/LecList.html">강의신청</a></li>
+                            <li><a href="./lecture/LecInfo.html">강사소개</a></li>
+                            <li><a href="./lecture/LecReview.html">수강후기</a></li>
+                        </ul>
+                    </li
+                    ><li><a href="./info/gymInfo.html">소개</a>
+                        <ul class="subMenu">
+                            <li><a href="./info/gymInfo.html">체육관소개</a></li>
+                            <li><a href="./info/roomInfo.html">시설정보</a></li>
+                        </ul>
+                    </li
+                    ><li><a href="./board/BoardList.html">커뮤니티</a>
+                        <ul class="subMenu">
+                            <li><a href="./board/noticeList.html">공지사항</a></li>
+                            <li><a href="./board/BoardList.html">게시판</a></li>
+                            <li><a href="#">고객센터</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!--contents-->
+        <div id="contents">
+            <div class="innerList">
+                <h2><span>전체 시설</span> 목록</h2>
+                <div class="productList">
+                    <div class="product">
+                        <a href="product.html">
+                            <div class="image_container">
+                                <img src="./image/0G1.jpg" alt="" title="product">
+                            </div>
+                            <div class="product_container">
+                                <h3>(G구역) 탁구장 오후</h3>
+                                <p class="time">오후 3:00 ~ 오후 8:00<span class="popup_container">
+                                    <span class="ApopupDeadline">마감임박</span>
+                                    <span class="ApopupPopular">인기</span>
+                                    <span class="ApopupEvent">이벤트</span>
+                                </span></p>
+                                <p><span class="discountPay">50,000 </span><span class="productPay mainPay">50,000</span> 원<span class="productCall"><img src="./image/callicon.png" alt=""><em>50</em></span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product">
+                        <a href="product.html">
+                            <div class="image_container">
+                                <img src="./image/0B1.jpg" alt="" title="product">
+                            </div>
+                            <div class="product_container">
+                                <h3>(B구역) 배드민턴 오후</h3>
+                                <p class="time">오후 3:00 ~ 오후 8:00<span class="popup_container">
+                                    <span class="ApopupPopular">인기</span>
+                                </span></p>
+                                <p><span class="discountPay">30,000 </span><span class="productPay mainPay">30,000</span> 원<span class="productCall"><img src="./image/callicon.png" alt=""><em>14</em></span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product">
+                        <a href="product.html">
+                            <div class="image_container">
+                                <img src="./image/0C1.jpg" alt="" title="product">
+                            </div>
+                            <div class="product_container">
+                                <h3>(C구역) 배구장 오전</h3>
+                                <p class="time">오전 8:00 ~ 오후 2:00<span class="popup_container">
+                                    <span class="ApopupPopular">인기</span>
+                                </span></p>
+                                <p><span class="discountPay">70,000 </span><span class="productPay mainPay">70,000</span> 원<span class="productCall"><img src="./image/callicon.png" alt=""><em>62</em></span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product">
+                        <a href="product.html">
+                            <div class="image_container">
+                                <img src="./image/0D2.jpg" alt="" title="product">
+                            </div>
+                            <div class="product_container">
+                                <h3>(D구역) 테니스장 오전</h3>
+                                <p class="time">오후 8:00 ~ 오후 2:00<span class="popup_container">
+                                    <span class="ApopupDeadline">마감임박</span>
+                                    <span class="ApopupPopular">인기</span>
+                                </span></p>
+                                <p><span class="discountPay">40,000 </span><span class="productPay mainPay">40,000</span> 원<span class="productCall"><img src="./image/callicon.png" alt=""><em>24</em></span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product">
+                        <a href="product.html">
+                            <div class="image_container">
+                                <img src="./image/0A1.jpg" alt="" title="product">
+                            </div>
+                            <div class="product_container">
+                                <h3>(A구역) 농구장 오전</h3>
+                                <p class="time">오전 8:00 ~ 오후 2:00<span class="popup_container">
+                                </span></p>
+                                <p><span class="discountPay">50,000 </span><span class="productPay mainPay">50,000</span> 원<span class="productCall"><img src="./image/callicon.png" alt=""><em>7</em></span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product">
+                        <a href="product.html">
+                            <div class="image_container">
+                                <img src="./image/0G2.jpg" alt="" title="product">
+                            </div>
+                            <div class="product_container">
+                                <h3>(G구역) 탁구장 오후</h3>
+                                <p class="time">오후 3:00 ~ 오후 8:00<span class="popup_container">
+                                    <span class="ApopupHidden">이벤트</span>
+                                </span></p>
+                                <p><span class="discountPay">30,000 </span><span class="productPay mainPay">30,000</span> 원<span class="productCall"><img src="./image/callicon.png" alt=""><em>5</em></span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product">
+                        <a href="product.html">
+                            <div class="image_container">
+                                <img src="./image/0D1.jpg" alt="" title="product">
+                            </div>
+                            <div class="product_container">
+                                <h3>(D구역) 테니스장 오후</h3>
+                                <p class="time">오후 3:00 ~ 오후 8:00<span class="popup_container">
+                                    <span class="ApopupDeadline">마감임박</span>
+                                    <span class="ApopupPopular">인기</span>
+                                    <span class="ApopupEvent">이벤트</span>
+                                </span></p>
+                                <p><span class="discountPay">40,000 </span><span class="productPay mainPay">40,000</span> 원<span class="productCall"><img src="./image/callicon.png" alt=""><em>15</em></span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product">
+                        <a href="product.html">
+                            <div class="image_container">
+                                <img src="./image/0A2.jpg" alt="" title="product">
+                            </div>
+                            <div class="product_container">
+                                <h3>(A구역) 농구장 오전</h3>
+                                <p class="time">오전 8:00 ~ 오후 2:00<span class="popup_container">
+                                    <span class="ApopupDeadline">마감임박</span>
+                                    <span class="ApopupPopular">인기</span>
+                                    <span class="ApopupEvent">이벤트</span>
+                                </span></p>
+                                <p><span class="discountPay">60,000 </span><span class="productPay mainPay">30,000</span> 원<span class="productCall"><img src="./image/callicon.png" alt=""><em>33</em></span></p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--slogan-->
+        <div id="slogan">
+            <section>
+                <p><a href="#">개인정보 처리방침</a></p>
+                <p><a href="#">이용약관</a></p>
+                <p><a href="#">사이트맵</a></p>
+            </section>
+        </div>
+        <!--footer-->
+        <footer>
+            <div class="footerInner">
+                <img src="./image/nameLogoMini.png">
+                <div class="address">
+                    <span>대표자: 박춘배</span>
+                    <span>서울시 강남구 남부순환로 9999 두더지빌딩 1층</span>
+                    <span>고객문의 031-XXXX-XXXX</spans><br>
+                    <span>&copy;copyright 2021-11 by EZen</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

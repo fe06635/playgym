@@ -1,0 +1,77 @@
+#contents {
+    position: relative;
+    width: 1180px;
+    text-align: center;
+}
+.boardList {
+    margin: 0 auto;
+    width: 960px;
+    min-height: 500px;
+}
+.boardList>h2 {
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: coral;
+}
+.boardList>table {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin: 0 auto;
+    width: 960px;
+    border-collapse: collapse;
+}
+.boardList .list_hover:hover {
+    background-color: rgb(231, 231, 231);
+}
+.boardList>table th {
+    text-align: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #ccc;
+    background-color: blanchedalmond;
+}
+.boardList>table td {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+}
+.boardList>table td:nth-of-type(2) {
+    text-align: left;
+    padding-left: 30px;
+}
+.boardList>table tr:last-child td {
+    border: none;
+}
+#board_searchFrm {
+    position: relative;
+    margin-top: 10px;
+    text-align: left;
+}
+#board_searchFrm select {
+    padding: 2px 2px;
+}
+#board_searchFrm input {
+    height: 19px;
+    line-height: 19px;
+}
+#board_searchFrm button:not(.btn_goPost) {
+    position: relative;
+    top: 1px;
+    padding: 1px 7px;
+    cursor: pointer;
+}
+.btn_goPost {
+    float: right;
+    position: relative;
+    top: 1px;
+    padding: 2px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    border: 1px solid coral;
+    background-color: coral;
+    color: #fff;
+    border-radius: 3px;
+    font-weight: bold;
+}

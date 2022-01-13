@@ -1,0 +1,395 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+.hidden, legend {
+    display: none;
+}
+a:link {
+    color: black;
+    text-decoration: none;
+}
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+/*웹 폰트*/
+@font-face {
+    font-family: 'Nanum';
+    font-weight: 400;
+    src: url('./font/NanumGothic.eot?#iefix') format('embedded-opentype'),
+         url('./font/NanumGothic.woff') format('woff'),
+         url('./font/NanumGothic.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'NanumBold';
+    font-weight: 600;
+    src: url('./font/NanumGothicBold.eot?#iefix') format('embedded-opentype'),
+         url('./font/NanumGothicBold.woff') format('woff'),
+         url('./font/NanumGothicBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'NanumEx';
+    font-weight: 900;
+    src: url('./font/NanumGothicExtraBold.eot?#iefix') format('embedded-opentype'),
+         url('./font/NanumGothicExtraBold.woff') format('woff'),
+         url('./font/NanumGothicExtraBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'webcafeIcon';
+    font-weight: 400;
+    src: url('./font/webcafeIcon.eot?#iefix') format('embedded-opentype'),
+         url('./font/webcafeIcon.woff') format('woff'),
+         url('./font/webcafeIcon.ttf') format('truetype'),
+         url('./font/webcafeIcon.svg#webcaferegular') format('svg');
+}
+html,body {
+    height: 100%;
+}
+body {
+    color: black;
+    font-size: 16px;
+    background: white;
+    font-family: 'Nanum';
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+header, #contents,#visual,#slogan,footer {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+header {
+    position: relative;
+}
+#headerTop {
+    width: 1180px;
+    margin: 0 auto;
+    height: 45px;
+    position: relative;
+}
+#logo {
+    position: absolute; 
+    top: 10px;
+    left: 20px;
+    line-height: 23px;
+}
+#logo a {
+    display: inline-block;
+    padding: 0 5px;
+    height: 100%;
+}
+#headerTop label {
+    display: inline-block;
+    position: absolute;
+    left: 225px;
+    padding: 6px 5px;
+}
+#search {
+    display: inline-block;
+    position: absolute;
+    top: 8px;
+    left: 255px;
+    padding: 6px 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 250px;
+}
+#headerTop label::before {
+    position: relative;
+    font-family: 'webcafeIcon';
+    content: "z";
+    color: #ccc;
+    font-weight: bold;
+    font-size: 1.16em;
+    top: 4px;
+}
+.mainOption {
+    text-align: right;
+}
+.mainOption li {
+    display: inline-block;
+    margin-left: 7px;
+}
+.mainOption li a {
+    display: inline-block;
+    padding: 0 5px;
+    line-height: 45px;
+    height: 100%;
+    font-weight: bold;
+    opacity: 0.6;
+}
+.mainOption a:hover {
+    text-decoration:underline;
+}
+/*.nav_bg {
+    display: none;
+    background-color: #2b2b37;
+    z-index: 5;
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 107px;
+    left: 0;
+} 풀드롭다운*/
+nav {
+    background: #2b2b37;
+    text-align: center;
+    z-index: 10;
+    height: 62px;
+    min-width: 1180px;
+}
+.mainMenu {
+    display: inline-block;
+    text-align: left;
+}
+.mainMenu>li {
+    /*float: left;*/
+    display: block;
+}
+.mainMenu>li>a{
+    display: inline-block;
+    width: 200px;
+    font-family: 'NanumEx';
+    font-size: 1.375em;
+    letter-spacing: 1px;
+    padding: 15px 20px 14px;
+    border-right:1px solid white;
+    color: #fff;
+    font-weight: bold;
+}
+.mainMenu>li:first-child {
+    border-left:1px solid white;
+}
+.mainMenuColor {
+    background-color: #848CB5;
+    /*background: #50bcdf;*/
+    /*background-color:#A6B8C4;*/
+    /*background-color:#6B6B84;*/
+    /*background-color:#C6D6F7;*/
+}
+.mainMenu ul li:hover a {
+    color: coral;
+}
+.mainMenu>li {
+    position: relative;
+    display: inline-block;
+}
+.mainMenu ul {
+    display: none;
+    position: absolute;
+    /*white-space: nowrap; 가로로할때는 필요함*/
+    padding: 10px 0;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color:#2b2b37;
+    z-index: 10;
+    border:none;
+    box-sizing: border-box;
+}
+.mainMenu ul li>a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 0px;
+    color:#a7acbc;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/*visual영역*/
+#visual {
+    width: max-content;
+    height: 580px;
+    /*background-image:url(../image/badminton2.jpg);
+    background-repeat: no-repeat;*/
+    position: relative;
+}
+.visualCanvas {
+    width: 1900px;
+    height: 580px;
+    position: relative;
+    overflow: hidden;
+}
+.visualSlide {
+    position: relative;
+    width: 10000px;
+    display: flex;
+}
+.visualImage {
+    position: relative;
+}
+.visualImage>img {
+    width: 1900px;
+    height: 580px;
+}
+.visual1 {
+    position: absolute;
+    top: 60%;
+    right: 10%;
+}
+.visual1 button{
+    background-color: white;
+    border-radius: 30px;
+    border: 1px solid white;
+    float: right;
+}
+.visual1 p {
+    font-size: 2.5em;
+    font-weight: bold;
+    color:black;
+    margin-bottom: 20px;
+}
+.visual2 {
+    text-align: left;
+    position: absolute;
+    top: 70%;
+    right: 8%;
+}
+.visual2 button{
+    background-color: white;
+    border-radius: 30px;
+    border: 1px solid white;
+    float: right;
+}
+.visual2 p {
+    font-size: 2.5em;
+    font-weight: bold;
+    color:mintcream;
+    margin-bottom: 20px;
+}
+.visual3 {
+    text-align: left;
+    position: absolute;
+    top: 60%;
+    left: 2%;
+}
+.visual3 button{
+    background-color: white;
+    border-radius: 30px;
+    border: 1px solid white;
+    float: right;
+}
+.visual3 p {
+    font-size: 2.5em;
+    font-weight: bold;
+    color:darkcyan;
+    margin-bottom: 20px;
+}
+.visual4 {
+    text-align: left;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+}
+.visual4 button{
+    background-color: white;
+    border-radius: 30px;
+    border: 1px solid white;
+}
+.visual4 p:nth-of-type(1) {
+    font-size: 2.8em;
+    font-weight: bold;
+    color:palegoldenrod;
+    margin-bottom: 15px;
+}
+.visual4 p:nth-of-type(3) {
+    margin-bottom: 20px;
+}
+.visual4 em {
+    font-style: normal;
+    color: gold;
+}
+.visual4 span {
+    font-size: 1.2em;
+    color:palegoldenrod;
+}
+.visualContent a {
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+@media screen and (max-width:1200px) {
+    .visualCanvas {
+        width: 1180px;
+        height: 580px;
+        position: relative;
+        overflow: hidden;
+    }
+    .visualSlide {
+        position: relative;
+        width: 10000px;
+        display: flex;
+    }
+    .visualImage {
+        position: relative;
+    }
+    .visualImage>img {
+        width: 1180px;
+        height: 580px;
+    }
+}
+
+/*slogan 영역*/
+#slogan {
+    margin-top: 50px;
+    background-color: #2A3943;
+    min-width: 1180px;
+}
+#slogan section {
+    width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    padding: 16px 0 ;
+    padding-left: 100px;
+}
+#slogan p {
+    margin-right: 40px;
+}
+#slogan a {
+    display: inline-block;
+    font-size: 0.95em;
+    font-weight: bold;
+    color: white;
+    padding: 5px 5px;
+}
+#slogan a:hover {
+    text-decoration: underline;
+}
+#slogan p::after {
+    font-size: 1.5em;
+    content: "|";
+    position: relative;
+    left: 20px;
+    top: 2px;
+    color: white;
+}
+#slogan p:last-child::after {
+    content: "";
+}
+footer {
+    margin-top: 20px;
+}
+.footerInner {
+    width: 1180px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    position: relative;
+}
+.footerInner img {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    padding: 0 5px;
+}
+.address {
+    margin-left: 200px;
+}
+.address span {
+    margin-left: 25px;
+    margin-bottom: 10px;
+}

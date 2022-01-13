@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Board</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/LecList.css">
+    <script src="../javascript/jquery-3.6.0.min.js"></script>
+    <script src="../javascript/index.js"></script>
+    <script src="../javascript/LecList.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <!--header-->
+        <header>
+            <div id="headerTop">
+                <h2 id="logo">
+                    <a href="../index.html"><img src="../image/nameLogoMini.png"></a>
+                </h2>
+                <label for="search"></label>
+                <input type="text" id="search" name="search" placeholder="종목명을 입력해주세요">
+                <ul class="mainOption">
+                    <li><a href="#">내 정보</a></li>
+                    <li><a href="../login.html">로그인</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+            </div>
+            <hr>
+        </header>
+        <nav>
+            <h2 class="hidden">네비게이션바</h2>
+            <ul class="mainMenu">
+                <li><a href="../list.html">시설대여</a><!--전체 시설보기로 들어가기-->
+                    <ul class="subMenu">
+                        <li><a href="../list.html">테니스코트</a></li>
+                            <li><a href="../list.html">농구코트</a></li>
+                            <li><a href="../list.html">배드민턴코트</a></li>
+                            <li><a href="../list.html">탁구코트</a></li>
+                            <li><a href="../list.html">족구코트</a></li>
+                            <li><a href="../list.html">배구코트</a></li>
+                    </ul>
+                </li
+                ><li><a href="../lecture/LecList.html">강의수강</a><!--공백제거를 위해 li 닫기를 다음 li 앞에 줌-->
+                    <ul class="subMenu">
+                        <li><a href="../lecture/LecList.html">강의신청</a></li>
+                        <li><a href="../lecture/LecInfo.html">강사소개</a></li>
+                        <li><a href="../lecture/LecReview.html">수강후기</a></li>
+                    </ul>
+                </li
+                ><li><a href="../info/gymInfo.html">소개</a>
+                    <ul class="subMenu">
+                        <li><a href="../info/gymInfo.html">체육관소개</a></li>
+                        <li><a href="../info/roomInfo.html">시설정보</a></li>
+                    </ul>
+                </li
+                ><li><a href="../board/BoardList.html">커뮤니티</a>
+                    <ul class="subMenu">
+                        <li><a href="../board/noticeList.html">공지사항</a></li>
+                        <li><a href="../board/BoardList.html">게시판</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!--contents-->
+        <div id="contents">
+            <div class="lecList">
+                <h2>수강목록</h2>
+                <div class="lecListRow">
+                    <div class="image_container">
+                        <img src="../image/1D1.png" alt="">
+                    </div>
+                    <div class="lecListInfo">
+                        <p class="lec_name">강사명 : &nbsp;<span>홍길동</span></p>
+                        <p class="lec_sport">종목명 : &nbsp;<span>테니스</span></p>
+                        <p class="lec_time">기간 : &nbsp;<span>2021-02-05 ~ 2021-03-07</span></p>
+                        <div class="lec_pay">모집상태 : &nbsp;<span class="lec_pay_state">모집중</span>
+                            <span class="lec_pay_pay">200,000<em>원</em></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lecListRow">
+                    <div class="image_container">
+                        <img src="../image/1C1.png" alt="">
+                    </div>
+                    <div class="lecListInfo">
+                        <p class="lec_name">강사명 : &nbsp;<span>서재영</span></p>
+                        <p class="lec_sport">종목명 : &nbsp;<span>배구</span></p>
+                        <p class="lec_time">기간 : &nbsp;<span>2022-01-01 ~ 2022-02-01</span></p>
+                        <div class="lec_pay">모집상태 : &nbsp;<span class="lec_pay_state">마감완료</span>
+                            <span class="lec_pay_pay">180,000<em>원</em></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lecListRow">
+                    <div class="image_container">
+                        <img src="../image/0G1.jpg" alt="">
+                    </div>
+                    <div class="lecListInfo">
+                        <p class="lec_name">강사명 : &nbsp;<span>김철수</span></p>
+                        <p class="lec_sport">종목명 : &nbsp;<span>탁구</span></p>
+                        <p class="lec_time">기간 : &nbsp;<span>2021-01-01 ~ 2021-02-02</span></p>
+                        <div class="lec_pay">모집상태 : &nbsp;<span class="lec_pay_state">마감완료</span>
+                            <span class="lec_pay_pay">170,000<em>원</em></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lecListRow">
+                    <div class="image_container">
+                        <img src="../image/0A3.jpg" alt="">
+                    </div>
+                    <div class="lecListInfo">
+                        <p class="lec_name">강사명 : &nbsp;<span>이영자</span></p>
+                        <p class="lec_sport">종목명 : &nbsp;<span>농구</span></p>
+                        <p class="lec_time">기간 : &nbsp;<span>2022-03-01 ~ 2022-04-10</span></p>
+                        <div class="lec_pay">모집상태 : &nbsp;<span class="lec_pay_state">모집중</span>
+                            <span class="lec_pay_pay">300,000<em>원</em></span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <!--slogan-->
+        <div id="slogan">
+            <section>
+                <p><a href="#">개인정보 처리방침</a></p>
+                <p><a href="#">이용약관</a></p>
+                <p><a href="#">사이트맵</a></p>
+            </section>
+        </div>
+        <!--footer-->
+        <footer>
+            <div class="footerInner">
+                <img src="../image/nameLogoMini.png">
+                <div class="address">
+                    <span>대표자: 박춘배</span>
+                    <span>서울시 강남구 남부순환로 9999 두더지빌딩 1층</span>
+                    <span>고객문의 031-XXXX-XXXX</spans><br>
+                    <span>&copy;copyright 2021-11 by EZen</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

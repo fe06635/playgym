@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <script src="./javascript/jquery-3.6.0.min.js"></script>
+    <script src="javascript/login.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div id="headerTop">
+                <h2 id="logo">
+                    <a href="index.html"><img src="./image/nameLogoMini.png"></a>
+                </h2>
+                <label for="search"></label>
+                <input type="text" id="search" name="search" placeholder="종목명을 입력해주세요">
+                <ul class="mainOption">
+                    <li><a href="#">내 정보</a></li>
+                    <li><a href="login.html">로그인</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+            </div>
+            <hr>
+        </header>
+        <!--contents-->
+        <div id="contents">
+            <form action="loginProc.jsp" method="post" id="login" name="login">
+                <img src="image/nameLogoMini.png">
+                <h2>로그인</h2>
+                <div class="loginInfo">
+                    <p>
+                        <input type="text" id="id" name="id" size="35" required placeholder="아이디">
+                    </p>
+                    <p>
+                        <input type="password" id="password" name="password" size="35" required placeholder="패스워드">
+                    </p>
+                    <div class="findRegister">
+                        <a href="register.html">회원가입</a>
+                        <a href="#">아이디/비밀번호 찾기</a>
+                    </div>
+                    <div>
+                        <button type="submit" id="loginComplete">로그인</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <footer>
+            <div class="footerInner">
+                <div>
+                    <span>&copy;copyright 2021-11 by EZen</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Board</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/BoardRead.css">
+    <script src="../javascript/jquery-3.6.0.min.js"></script>
+    <script src="../javascript/index.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <!--header-->
+        <header>
+            <div id="headerTop">
+                <h2 id="logo">
+                    <a href="../index.html"><img src="../image/nameLogoMini.png"></a>
+                </h2>
+                <label for="search"></label>
+                <input type="text" id="search" name="search" placeholder="종목명을 입력해주세요">
+                <ul class="mainOption">
+                    <li><a href="#">내 정보</a></li>
+                    <li><a href="../login.html">로그인</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+            </div>
+            <hr>
+        </header>
+        <nav>
+            <h2 class="hidden">네비게이션바</h2>
+            <ul class="mainMenu">
+                <li><a href="../list.html">시설대여</a><!--전체 시설보기로 들어가기-->
+                    <ul class="subMenu">
+                        <li><a href="../list.html">테니스코트</a></li>
+                            <li><a href="../list.html">농구코트</a></li>
+                            <li><a href="../list.html">배드민턴코트</a></li>
+                            <li><a href="../list.html">탁구코트</a></li>
+                            <li><a href="../list.html">족구코트</a></li>
+                            <li><a href="../list.html">배구코트</a></li>
+                    </ul>
+                </li
+                ><li><a href="../lecture/LecList.html">강의수강</a><!--공백제거를 위해 li 닫기를 다음 li 앞에 줌-->
+                    <ul class="subMenu">
+                        <li><a href="../lecture/LecList.html">강의신청</a></li>
+                        <li><a href="../lecture/LecInfo.html">강사소개</a></li>
+                        <li><a href="../lecture/LecReview.html">수강후기</a></li>
+                    </ul>
+                </li
+                ><li><a href="../info/gymInfo.html">소개</a>
+                    <ul class="subMenu">
+                        <li><a href="../info/gymInfo.html">체육관소개</a></li>
+                        <li><a href="../info/roomInfo.html">시설정보</a></li>
+                    </ul>
+                </li
+                ><li><a href="../board/BoardList.html">커뮤니티</a>
+                    <ul class="subMenu">
+                        <li><a href="../board/noticeList.html">공지사항</a></li>
+                        <li><a href="../board/BoardList.html">게시판</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!--contents-->
+        <div id="contents">
+            <div class="boardRead">
+                <h2>자유게시판</h2>
+                <div class="boardRead_header">
+                    <div class="boardRead_title">
+                        <h2>테스트1 제목입니다.</h2>
+                    </div>
+                    <div class="boardMember_info">
+                        <div class="boardMember_name">
+                            <span>이름입니다.</span>
+                        </div>
+                        <div class="boardMember_date">
+                            <span>조회수 : 50</span>
+                            <span>작성일 : 2099-12-25</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="boardRead_content">
+                    <div class="boardRead_read">
+                        <p>내용입니다.</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="boardRead_button">
+                    <button class="btn_list" onclick="location.href='BoardList.html'">목록</button>
+                    <button class="btn_update" onclick="location.href='BoardUpdate.html'">수정</button>
+                    <button class="btn_delete" onclick="location.href='BoardDelete.html'">삭제</button>
+                </div>
+            </div>
+        </div>
+        <!--slogan-->
+        <div id="slogan">
+            <section>
+                <p><a href="#">개인정보 처리방침</a></p>
+                <p><a href="#">이용약관</a></p>
+                <p><a href="#">사이트맵</a></p>
+            </section>
+        </div>
+        <!--footer-->
+        <footer>
+            <div class="footerInner">
+                <img src="../image/nameLogoMini.png">
+                <div class="address">
+                    <span>대표자: 박춘배</span>
+                    <span>서울시 강남구 남부순환로 9999 두더지빌딩 1층</span>
+                    <span>고객문의 031-XXXX-XXXX</spans><br>
+                    <span>&copy;copyright 2021-11 by EZen</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

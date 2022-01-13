@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>introduce</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/roomInfo.css">
+    <script src="../javascript/jquery-3.6.0.min.js"></script>
+    <script src="../javascript/index.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <!--header-->
+        <header>
+            <div id="headerTop">
+                <h2 id="logo">
+                    <a href="../index.html"><img src="../image/nameLogoMini.png"></a>
+                </h2>
+                <label for="search"></label>
+                <input type="text" id="search" name="search" placeholder="종목명을 입력해주세요">
+                <ul class="mainOption">
+                    <li><a href="#">내 정보</a></li>
+                    <li><a href="../login.html">로그인</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+            </div>
+            <hr>
+        </header>
+        <nav>
+            <h2 class="hidden">네비게이션바</h2>
+            <ul class="mainMenu">
+                <li><a href="../list.html">시설대여</a><!--전체 시설보기로 들어가기-->
+                    <ul class="subMenu">
+                        <li><a href="../list.html">테니스코트</a></li>
+                            <li><a href="../list.html">농구코트</a></li>
+                            <li><a href="../list.html">배드민턴코트</a></li>
+                            <li><a href="../list.html">탁구코트</a></li>
+                            <li><a href="../list.html">족구코트</a></li>
+                            <li><a href="../list.html">배구코트</a></li>
+                    </ul>
+                </li
+                ><li><a href="../lecture/LecList.html">강의수강</a><!--공백제거를 위해 li 닫기를 다음 li 앞에 줌-->
+                    <ul class="subMenu">
+                        <li><a href="../lecture/LecList.html">강의신청</a></li>
+                        <li><a href="../lecture/LecInfo.html">강사소개</a></li>
+                        <li><a href="../lecture/LecReview.html">수강후기</a></li>
+                    </ul>
+                </li
+                ><li><a href="../info/gymInfo.html">소개</a>
+                    <ul class="subMenu">
+                        <li><a href="../info/gymInfo.html">체육관소개</a></li>
+                        <li><a href="../info/roomInfo.html">시설정보</a></li>
+                    </ul>
+                </li
+                ><li><a href="../board/BoardList.html">커뮤니티</a>
+                    <ul class="subMenu">
+                        <li><a href="../board/noticeList.html">공지사항</a></li>
+                        <li><a href="../board/BoardList.html">게시판</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!--contents-->
+        <div id="contents">
+            <div class="introduce">
+                <h2>시설정보</h2>
+                <div class="room">
+                    <div class="image_container"><img src="../image/0A1.jpg"></div>
+                    <div class="room_info">
+                        <h3>농구장</h3>
+                        <p>총 4개의 구역으로 되어있는 농구장은 대회 및 관람을 위한 관중석도 마련되어있으며
+                            격하게 움직일 수 있는 스포츠 종목인만큼 농구 골대와 바닥 안전에 충분히 주의하면서
+                            설계하였습니다. 대회 개최를 중심으로 만들어진 코트인 만큼 많이 연습하러 오셔서
+                            농구를 즐겨주셨으면 좋겠습니다. 많은 이용부탁드립니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="room">
+                    <div class="image_container"><img src="../image/0B1.jpg"></div>
+                    <div class="room_info">
+                        <h3>배드민턴장</h3>
+                        <p>총 8개의 구역으로 되어있는 배드민턴장은 운동 중 넘어지거나 다치는 것을
+                            우려하여 바닥시설 정비를 철저히 하고있으며, 바람에 영향을 받지 않도록
+                            배드민턴장은 실내에 설치되어있습니다. 또한 대회가 개최되었을때도 
+                            손쉽게 운영할 수 있도록 최신장비들을 구비하고 있습니다. 많은 이용부탁드립니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="room">
+                    <div class="image_container"><img src="../image/0C1.jpg"></div>
+                    <div class="room_info">
+                        <h3>배구장</h3>
+                        <p>총 6개의 구역으로 되어있는 배구장은 다른 운동을 즐기는 사람과 마찰이 일어나지 않게
+                            안정적이며 편안한 운동을 즐길 수 있도록 비교적 넓은 코트로 설계되어있습니다.
+                            대회개최 혹은 관람을 위해 소량의 관중석도 존재하니 많이 방문하여 배구를
+                            즐겨주셨으면 좋겠습니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="room">
+                    <div class="image_container"><img src="../image/0D1.jpg"></div>
+                    <div class="room_info">
+                        <h3>테니스장</h3>
+                        <p>총 8개의 구역으로 되어있는 테니스장은 야외에 6개 실내에 2개로 설게되어있습니다.
+                            다른 코트와 서로 방해되지 않도록 펜스가 쳐져 있어 안전하고 편안하도록 하였습니다.
+                            여러분도 테니스장으로 와서 많은 이용부탁드립니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="room">
+                    <div class="image_container"><img src="../image/0G1.jpg"></div>
+                    <div class="room_info">
+                        <h3>탁구장</h3>
+                        <p>총 10개의 구역으로 되어있는 탁구장은 어린아이부터 노인까지 자유롭게
+                            이용할 수 있으며 늘 청결하도록 청소 및 정비를 하고 있습니다. 또한
+                            가족 혹은 친구들끼리 방해받지 않도록 탁구장이 있는 룸도 있으므로 많은
+                                이용 부탁드립니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--slogan-->
+        <div id="slogan">
+            <section>
+                <p><a href="#">개인정보 처리방침</a></p>
+                <p><a href="#">이용약관</a></p>
+                <p><a href="#">사이트맵</a></p>
+            </section>
+        </div>
+        <!--footer-->
+        <footer>
+            <div class="footerInner">
+                <img src="../image/nameLogoMini.png">
+                <div class="address">
+                    <span>대표자: 박춘배</span>
+                    <span>서울시 강남구 남부순환로 9999 두더지빌딩 1층</span>
+                    <span>고객문의 031-XXXX-XXXX</spans><br>
+                    <span>&copy;copyright 2021-11 by EZen</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+<script>
+    $('.image_container>img').click(function() {
+        let src=$(this).attr('src');
+        $('.main_image>img').css('opacity',0.5).stop().attr('src',src).animate({opacity:1},500);
+    });
+</script>
+</html>
